@@ -1,0 +1,17 @@
+name: App help or guide correction
+description: Report a problem with Trip & Taste or a sourced guide correction.
+body:
+  - type: markdown
+    attributes:
+      value: "This is a public report. Do not include private bookings, journal text, travel dates, credentials or contact details."
+  - type: input
+    id: version
+    attributes:
+      label: App version and device type
+  - type: textarea
+    id: issue
+    attributes:
+      label: What happened?
+      description: For guide corrections, include the public place name and official source URL.
+    validations:
+      required: true
